@@ -1,0 +1,46 @@
+.regular-customers {
+  color: $tittle-text-color;
+  text-align: center;
+}
+
+.regular-customers__title {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.customers {
+  display: flex;
+  justify-content: start;
+
+  &--mt {
+    margin-top: 50px;
+  }
+
+  &__link {
+    width: 170px;
+    height: 92px;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__company {
+    @extend %icon-customers;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &--hover {
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--hover:hover,
+  &__icon--hover:focus {
+    fill: $fill-customers-hover;
+    border: 1px solid $fill-customers-hover;
+    border-radius: 4px;
+  }
+}

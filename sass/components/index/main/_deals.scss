@@ -1,0 +1,40 @@
+.deals__title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  text-transform: none;
+  padding-bottom: 50px;
+  color: $tittle-text-color;
+}
+
+.deals-list {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.cover {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: $bgc-text-show;
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secendory-text-color;
+  }
+}

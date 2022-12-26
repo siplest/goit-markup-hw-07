@@ -1,0 +1,11 @@
+.footer {
+  background-color: $footer-bgcolor;
+  letter-spacing: 0.03em;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.container--footer {
+  display: flex;
+  align-items: baseline;
+}

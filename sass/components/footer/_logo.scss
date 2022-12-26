@@ -1,0 +1,11 @@
+.address-container__firtspart-logo {
+  display: inline-block;
+  color: $firspart-logo-footer;
+  margin-bottom: 28px;
+  @extend %logo;
+}
+
+.address-container__secondpart-logo {
+  color: $secondpart-logo-footer;
+  @extend %logo;
+}
